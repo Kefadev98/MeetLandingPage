@@ -42,43 +42,43 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
 }
-.main-slika1 {
+.main__photo--one {
   flex-basis: 30%;
   overflow: hidden;
   position: relative; 
 }
-.main-slika2 {
+.main__photo--two {
   flex-basis: 30%;
   overflow: hidden;
   position: relative;
   text-align: right;
 }
-.main-slika1-tablet {
+.main__photo--one-tablet {
   display: none;
 }
-.main-slika1-desktop {
+.main__photo--one-desktop {
   max-width: 100%;
   height: auto;
   position: relative;
   right: 30px;
 }
-.main-slika1-tablet {
+.main__photo--one-tablet {
   max-width: 108%;
   height: auto;
   margin-left: -27px;
 }
-.main-slika2 img {
+.main__photo--two img {
   max-width: 100%;
   height: auto;
   position: relative;
   left: 38px;
 }
-.main-tekst {
+.main-text {
   flex-basis: 39%;
   text-align: center;
   margin: 46px 68px 0px 68px;
 }
-.main-paragraf {
+.main-paragraph {
   margin-top: 34px;
   font-size: 1.8rem;
   color: #87879D;
@@ -150,7 +150,7 @@ h2 {
 .features {
   margin-top: 110px;
 }
-.features-slike {
+.features__photos {
   margin: 64px 10.1% 0 10.1%;
   display: flex;
   justify-content: center;
@@ -164,14 +164,14 @@ h2 {
   display: flex;
   gap: 30px;
 }
-.photo-set-slika {
+.photos-set {
   width: 100%;
   max-width: 45%;
   height: auto;
   border-radius: 10px;
   cursor: pointer;
 }
-.photo-set-slika:hover {
+.photos-set:hover {
   transform: scale(1.1);
   transition: 0.3s;
 }
@@ -186,19 +186,19 @@ h2 {
   text-align: center;
   max-width: 540px;
 }
-.features-text-prvinaslov {
+.features-text-one {
   font-size: 1.6rem;
   font-weight: 900;
   letter-spacing: 4px;
   text-transform: uppercase;
   color: #4D96A9;
 }
-.features-text-druginaslov {
+.features-text-two {
   margin: 16px 55px 0px 55px;
   line-height: 44px;
   color: #28283D;
 }
-.features-text-paragraf {
+.features-text-paragraph {
   margin-top: 32px;;
   color: #87879D;
 }
@@ -206,11 +206,11 @@ footer {
   position: relative;
   margin-top: 72px;
 }
-.footer-content-pozadina {
+.footer-content-background {
   min-height: 308px;
   background: url(images/desktop/image-footer.jpg) no-repeat center center/cover;
 }
-.footer-content-pozadina::before {
+.footer-content-background::before {
   content: '';
   width: 100%;
   height: 308px;
@@ -218,7 +218,7 @@ footer {
   background-color: #4D96A9;
   opacity: 0.8;
 }
-.footer-content-tekst {
+.footer-content-text {
   height: 308px;
   position: relative;
   display: flex;
@@ -226,13 +226,13 @@ footer {
   justify-content: space-evenly;
   align-items: center;
 }
-.footer-content-tekst div {
+.footer-content-text div {
   flex-basis: 25%;
 }
-.footer-content-tekst h2 {
+.footer-content-text h2 {
   color: #fff;
 }
-.footer-content-tekst p {
+.footer-content-text p {
   color: #fff;
 }
 .btn--secondary span {
@@ -247,22 +247,22 @@ footer {
   .main {
     flex-direction: column;
   }
-  .main-slika1-desktop {
+  .main__photo--one-desktop {
     display: none;
   }
-  .main-slika1-tablet {
+  .main__photo--one-tablet {
     display: block;
   }
-  .main-slika2 {
+  .main__photo--two {
     display: none;
   }
-  .main-tekst {
+  .main-text {
     margin: 67px 125px 0px 125px;
   }
   .photo-set, .photo-set1, .photo-set2 {
     gap: 11px;
   }
-  .features-slike {
+  .features__photos {
     margin: 97px 4.9% 0 4.9%;
   }
   .features {
@@ -275,43 +275,43 @@ footer {
     flex-basis: 80%;
     max-width: 573px;
   }
-  .features-text-paragraf {
+  .features-text-paragraph {
     font-size: 1.6rem;
   }
-  .features-text-druginaslov {
+  .features-text-two {
     margin: 16px 60px 0px 60px;
   }
   footer {
     margin-top: 80px;
   }
-  .footer-content-tekst {
+  .footer-content-text {
     flex-direction: column;
     justify-content: center;
     padding: 0 12%;
     text-align: center;
   }
-  .footer-content-tekst div {
+  .footer-content-text div {
     flex-basis: 25%;
   }
-  .footer-content-tekst h2 {
+  .footer-content-text h2 {
     padding: 0 1%;
     margin-bottom: 32px;
   }
-  .footer-content-pozadina {
+  .footer-content-background {
     min-height: 428px;
     background: url(images/tablet/image-footer.jpg) no-repeat center center/cover;
   }
-  .footer-content-pozadina::before {
+  .footer-content-background::before {
     height: 428px;
   }
-  .footer-content-tekst {
+  .footer-content-text {
     height: 428px;
     padding-top: 55px;
   }
 }
 
 @media only screen and (max-width: 620px) {
-  .main-tekst {
+  .main-text {
     margin: 67px 70px 0px 70px;
   }
   h1 {
@@ -329,19 +329,19 @@ footer {
     font-size: 3.2rem;
     line-height: 3.6rem;
   }
-  .main-slika1-tablet {
+  .main__photo--one-tablet {
     max-width: 111%;
     margin-left: -20px;
   }
-  .main-tekst {
+  .main-text {
     margin: 67px 24px 0px 24px;
   }
-  .main-paragraf {
+  .main-paragraph {
     font-size: 1.6rem;
     line-height: 2.6rem;
     margin-top: 24px;
   }
-  .features-slike {
+  .features__photos {
     margin: 84px 6.2% 0 6.2%;
   }
   .photo-set {
@@ -353,15 +353,15 @@ footer {
   .features-text-container {
     margin-top: 64px;
   }
-  .features-text-druginaslov {
+  .features-text-two {
     margin: 16px 24px 0px 24px;
     font-size: 3.2rem;
     line-height: 3.6rem;
   }
-  .footer-content-tekst {
+  .footer-content-text {
     padding: 0 7%;
   }
-  .footer-content-tekst h2 {
+  .footer-content-text h2 {
     margin-top: 68px;
     margin-bottom: 30px;
     font-size: 3.2rem;
